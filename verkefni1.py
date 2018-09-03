@@ -18,5 +18,6 @@ def bio():
     return "Hér eru upplýsngar um Steve Jobs"
 def pic():
     return "Hér eru myndir af Steve Jobs"
+#run(host='localhost',port=8080)
 
 bottle.run(host='0.0.0.0',port=argv[1])
