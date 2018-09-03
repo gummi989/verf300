@@ -1,4 +1,4 @@
-run(host='0.0.0.',port=os.environ.get('port'))from bottle import route, run
+from bottle import route, argv
 
 @route('/')
 
@@ -9,7 +9,7 @@ def index():
     <a href="/bio">Biography</a>
     <a href="/pic">Pitcures</a>
     """
-        
+
 @route("/about")
 def jobs():
     return "Hér eru upplýsngar um Steve Jobs"
@@ -19,6 +19,4 @@ def bio():
 def pic():
     return "Hér eru myndir af Steve Jobs"
 
-
-
-run(host='0.0.0.',port=os.environ.get('port'))
+bottle.run(host='0.0.0.0',port=argv[1])
