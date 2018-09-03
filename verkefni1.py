@@ -1,4 +1,7 @@
+
 from sys import argv
+import bottle
+from bottle import*
 
 @route('/')
 
