@@ -17,8 +17,11 @@ def index():
 def jobs():
     return "Hér eru upplýsngar um Steve Jobs"
 
+@route("/bio")
 def bio():
     return "Hér eru upplýsngar um Steve Jobs"
+
+@route("/pic")
 def pic():
     return "Hér eru myndir af Steve Jobs"
 #run(host='localhost',port=8080)
